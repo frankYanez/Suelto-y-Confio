@@ -1,0 +1,26 @@
+.navegacion {
+    background-color: rgba(181,252,252,1);
+    color: aliceblue;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    -webkit-text-stroke: 1.5px black;
+};
+
+.links {
+    display: flex;
+    justify-content: start;
+};
+
+.link {
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+};
