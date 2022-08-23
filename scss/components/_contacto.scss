@@ -1,0 +1,21 @@
+.icon-red {
+    animation: fly 2s  infinite;
+};
+
+@keyframes fly {
+    0% {
+        text-shadow: 3px 3px 5px rgb(114, 244, 244);
+    }
+    25%{
+        text-shadow: 3px 3px 5px rgb(53, 255, 255);
+    }
+    50%{
+        text-shadow: 3px 3px 3px rgb(5, 225, 225);
+    }
+    75%{
+        text-shadow: 3px 3px 5px rgb(53, 255, 255);
+    }
+    100%{
+        text-shadow: 3px 3px 5px rgb(114, 244, 244);
+    }
+};

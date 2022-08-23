@@ -1,6 +1,8 @@
 @import 'components/header';
 @import 'components/navbar';
 @import 'components/main';
+@import 'components/contacto';
+@import 'components/tips';
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -18,4 +20,8 @@ p{
 
 .img {
     max-width: 50%;
-}
+};
+
+.separador {
+    margin: 100px 0 100px 0;
+};

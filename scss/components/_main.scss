@@ -14,3 +14,13 @@ h2 {
     max-width: 300px;
     justify-content: space-between;
 };
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+};
+
+.icon {
+    display: block;
+    margin: auto
+};

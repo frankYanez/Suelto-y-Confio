@@ -1,0 +1,17 @@
+@mixin tip {
+    width: 100%;
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 4px;
+    border: 1px solid aqua ;
+    box-shadow: 19px 22px 8px 0px rgba(0,0,0,0.1);
+};
+
+.tip img{
+    width: 40%;
+    height: 400px;
+};
+
+.tip {
+    @include tip();
+}
