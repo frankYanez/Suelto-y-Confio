@@ -1,87 +1,139 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-.overlay {
-  position: absolute;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(11deg, rgba(0, 0, 0, 0.6393907905) 100%, rgba(0, 0, 0, 0.2108193619) 100%);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.overlay h1 {
-  font-size: 150px;
-  font-family: "Lobster", cursive;
-}
-.overlay p {
-  font-size: 50px;
-}
-
-.video {
+.header {
   position: relative;
 }
 
-.video-header {
+.overlay {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0.5553571771) 0%);
   width: 100%;
-  height: 30%;
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 .navegacion {
-  background-color: rgb(181, 252, 252);
-  color: aliceblue;
-  height: 70px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
 }
 
-.logo {
-  font-family: "Lobster", cursive;
-  font-size: 40px;
-  -webkit-text-stroke: 1.5px black;
-}
-
-.links {
-  display: flex;
-  justify-content: start;
-}
-
-.link {
-  text-decoration: none;
+.navegacion a {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 25px;
-  -webkit-text-stroke: 1px black;
+  margin: 0 50px;
+  text-decoration: none;
+  color: #00a9a5;
 }
 
+.navegacion a:hover {
+  color: white;
+}
+
+.contenido_video {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.contenido-video p {
+  color: white;
+}
+
+h1 {
+  font-size: 180px;
+}
+
+.video {
+  width: 100%;
+}
+
+.contenido_video h1 {
+  color: white;
+  font-family: "Lobster", sans-serif;
+  text-overflow: clip;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #00a9a5;
+}
+
+@media (max-width: 490px) {
+  h1 {
+    font-size: 80;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 80;
+  }
+}
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 40;
+  }
+}
+@media (max-width: 490px) {
+  .navegacion {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: initial;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .navegacion {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: initial;
+  }
+}
 h2 {
-  font-size: 100px;
-  font-family: "Lobster", cursive;
+  font-size: 50px;
   text-align: center;
 }
 
-.imgs-main {
-  margin-top: 100px;
+.contenedor-prom {
+  text-align: center;
+}
+
+.info {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-.img-main {
-  max-width: 300px;
-  justify-content: space-between;
-}
-
-.icons {
-  display: flex;
-  justify-content: space-around;
-}
-
-.icon {
-  display: block;
+.info h2 {
+  border-radius: 50%;
+  font-size: 60px;
   margin: auto;
+  background-color: #00a9a5;
+  text-align: center;
 }
 
+.video-prom video {
+  padding: 100px;
+  max-width: 100%;
+  filter: drop-shadow(2px 4px 5px #092327);
+}
+
+@media (max-width: 490px) {
+  .contenedor-prom {
+    flex-direction: column;
+  }
+}
 .icon-red {
   animation: fly 2s infinite;
 }
@@ -104,12 +156,14 @@ h2 {
   }
 }
 .tip img {
-  width: 40%;
+  width: 400px;
   height: 400px;
+  border-radius: 50%;
+  border: 2px white;
 }
 
 .tip {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   background-color: aquamarine;
   border-radius: 4px;
@@ -117,10 +171,100 @@ h2 {
   box-shadow: 19px 22px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
+.contenedor-productos {
+  gap: 30px;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 9px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.img-producto {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto-precio {
+  font-size: 20px;
+  text-align: center;
+}
+
+.boton {
+  cursor: pointer;
+  color: white;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #0b5351;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.boton:hover {
+  border: 1px solid white;
+}
+
+.boton:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+.card h3 {
+  padding: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.card h4 {
+  font-size: 25px;
+}
+
+.contenido-boton {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #0b5351;
+  padding: 50px;
+}
+
+.img-footer {
+  max-width: 150px;
+}
+
+footer div {
+  align-items: flex-start;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #092327;
+}
+
+html {
+  cursor: url(../assets/esponjita-mouse-mouse.png), auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: "Lobster", cursive;
 }
 
 p {
@@ -128,12 +272,28 @@ p {
   font-size: 20px;
 }
 
-.img {
-  max-width: 50%;
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
-.separador {
-  margin: 100px 0 100px 0;
+.container {
+  width: 80%;
+  margin: auto;
 }
+
+.space-section {
+  margin: 50px auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+/* CSS HEX */
 
 /*# sourceMappingURL=styles.css.map */

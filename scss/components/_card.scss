@@ -1,0 +1,74 @@
+.contenedor-productos{
+    gap: 30px;
+}
+.card{
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 9px 8px 4px rgba(0,0,0,0.2);
+}
+
+
+.img-producto{
+    width: 100%;
+    max-height: 200px;
+    object-fit:contain;
+    
+}
+
+// .img-producto:hover{
+//     filter: brightness(100%);
+// }
+
+.contenedor-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto-precio{
+    font-size: 20px;
+    text-align: center;
+}
+
+// button{
+//     margin: auto;
+// }
+.boton {
+    cursor: pointer;
+    color: white;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #0b5351ff;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   .boton:hover {
+    border: 1px solid white;
+   }
+   
+   .boton:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   }
+.card h3{
+    padding: 10px;
+    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card h4{
+    font-size: 25px;
+}
+
+.contenido-boton{
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,26 +1,31 @@
-h2 {
-    font-size: 100px;
-    font-family: 'Lobster', cursive;
+h2{
+    font-size: 50px;
     text-align: center;
-};
+}
 
-.imgs-main {
-    margin-top: 100px;
+.contenedor-prom{
+    text-align: center;
+}
+.info{
     display: flex;
-    justify-content: space-between
-};
+    flex-direction: column;
+}
+.info h2{
+    border-radius: 50%;
+    font-size: 60px;
+    margin: auto;
+    background-color: #00a9a5ff;
+    text-align: center;
+}
 
-.img-main {
-    max-width: 300px;
-    justify-content: space-between;
-};
+.video-prom video{
+    padding: 100px;
+    max-width: 100%;
+    filter: drop-shadow(2px 4px 5px #092327ff);
+}
 
-.icons {
-    display: flex;
-    justify-content: space-around;
-};
-
-.icon {
-    display: block;
-    margin: auto
-};
+@media (max-width:490px){
+    .contenedor-prom{
+        flex-direction: column;
+    }
+}

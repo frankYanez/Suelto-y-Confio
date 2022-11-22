@@ -1,27 +1,24 @@
-.navegacion {
-    background-color: rgba(181,252,252,1);
-    color: aliceblue;
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+@media (max-width:490px){
+    .navegacion{flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: initial;
 }
 
-.logo{
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
-    -webkit-text-stroke: 1.5px black;
-};
+}
+@media (max-width:700px){
+    h1{
+        font-size: 80px;
+    }
+    .navegacion{flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: initial;}
+}
 
-.links {
-    display: flex;
-    justify-content: start;
-};
 
-.link {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
-    -webkit-text-stroke: 1px black;
-};
+
+
+    
+    
+    

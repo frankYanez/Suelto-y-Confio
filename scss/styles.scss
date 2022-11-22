@@ -3,6 +3,8 @@
 @import 'components/main';
 @import 'components/contacto';
 @import 'components/tips';
+@import 'components/card';
+@import 'components/footer';
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -11,17 +13,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #092327ff;
 };
+
+html{
+    cursor: url(../assets/esponjita-mouse-mouse.png), auto;
+}
+
+html{
+    scroll-behavior: smooth;
+};
+
+h2{
+    font-family: 'Lobster', cursive;
+}
 
 p{
     font-family: 'Poppins', sans-serif;
     font-size: 20px
 };
 
-.img {
-    max-width: 50%;
-};
+button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
 
-.separador {
-    margin: 100px 0 100px 0;
-};
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.space-section{
+    margin: 50px auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.f-column{
+    flex-direction: column;
+}
+
+
+// Root
+/* CSS HEX */
+// --dark-jungle-green: #092327ff;
+// --deep-jungle-green: #0b5351ff;
+// --light-sea-green: #00a9a5ff;aqua
+// --teal-blue: #4e8098ff;
+// --white: #ffffffff;
